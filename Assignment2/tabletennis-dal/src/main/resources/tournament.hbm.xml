@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+	<class name="dal.model.Tournament" table="tabletennis.tournament">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+         <property name="name" type="java.lang.String">
+            <column name="NAME" />
+        </property>
+         <property name="startDate" type="timestamp">
+            <column name="STARTDATE" />
+        </property>
+          <property name="isPaid" type="boolean">
+            <column name="ISPAID" />
+        </property>
+        <many-to-one name="m1" class="dal.model.Match">
+			<column name="m1" not-null="false"></column>
+					</many-to-one>
+              <many-to-one name="m2" class="dal.model.Match">
+			<column name="m2" not-null="false"></column>
+					</many-to-one>
+			        <many-to-one name="m3" class="dal.model.Match">
+			<column name="m3" not-null="false"></column>
+					</many-to-one>
+			        <many-to-one name="m4" class="dal.model.Match">
+			<column name="m4" not-null="false"></column>
+					</many-to-one>
+			        <many-to-one name="m5" class="dal.model.Match">
+			<column name="m5" not-null="false"></column>
+					</many-to-one>
+			        <many-to-one name="m6" class="dal.model.Match">
+			<column name="m6" not-null="false"></column>
+				</many-to-one>
+			        <many-to-one name="m7" class="dal.model.Match">
+			<column name="m7" not-null="false"></column>
+					</many-to-one>
+    </class>
+</hibernate-mapping>

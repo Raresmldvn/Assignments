@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="vc.controllers.MoneyFormController"
+ maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="207.0" prefWidth="287.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="53.0" layoutY="14.0" prefHeight="22.0" prefWidth="201.0" text="ACCOUNT MANAGER" textFill="#861e1e">
+         <font>
+            <Font name="Century" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="53.0" prefHeight="18.0" prefWidth="45.0" text="Player" />
+      <TextField fx:id="playerTF" layoutX="86.0" layoutY="49.0" />
+      <Label layoutX="35.0" layoutY="86.0" text="Money" />
+      <TextField fx:id="moneyTF" layoutX="86.0" layoutY="82.0" prefHeight="26.0" prefWidth="58.0" />
+      <Label layoutX="31.0" layoutY="117.0" text="Amount" />
+      <TextField fx:id="amountTF" layoutX="86.0" layoutY="113.0" prefHeight="26.0" prefWidth="58.0" />
+      <Button fx:id="depositButton" layoutX="48.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleDeposit" prefHeight="26.0" prefWidth="79.0" text="Deposit" textFill="#791818" />
+      <Button fx:id="withdrawButton" layoutX="149.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleWithdraw" prefHeight="26.0" prefWidth="79.0" text="Withdraw" textFill="#879a0a" />
+   </children>
+</AnchorPane>

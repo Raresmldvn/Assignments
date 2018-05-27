@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+	<class name="dal.model.Match" table="tabletennis.match">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+		<many-to-one name="set1" class="dal.model.Set">
+			<column name="set1" not-null="false"></column>
+					</many-to-one>
+				<many-to-one name="set2" class="dal.model.Set">
+			<column name="set2" not-null="false"></column>
+					</many-to-one>
+				<many-to-one name="set3" class="dal.model.Set">
+			<column name="set3" not-null="false"></column>
+					</many-to-one>
+				<many-to-one name="set4" class="dal.model.Set">
+			<column name="set4" not-null="false"></column>
+		</many-to-one>
+		<many-to-one name="set5" class="dal.model.Set">
+			<column name="set5" not-null="false"></column>
+		</many-to-one>
+		<many-to-one name="player1" class="dal.model.Player">
+			<column name="player1" not-null="false"></column>
+		</many-to-one>
+		<many-to-one name="player2" class="dal.model.Player">
+			<column name="player2" not-null="false"></column>
+		</many-to-one>
+    </class>
+</hibernate-mapping>

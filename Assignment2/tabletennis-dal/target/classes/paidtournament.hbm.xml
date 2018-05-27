@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping default-lazy="false">
+	<class name="dal.model.PaidTournament" table="tabletennis.paidtournament">
+        <id name="id" type="int">
+            <column name="ID" />
+        </id>
+			  <many-to-one name="tournament" class="dal.model.Tournament">
+			<column name="TOURNAMENTID" not-null="false"></column>
+					</many-to-one>
+		<property name="fee" type="float">
+            <column name="FEE" />
+         </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="vc.controllers.PlayerFormController"
+ maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="38.0" layoutY="39.0" prefHeight="18.0" prefWidth="46.0" text="Name" textFill="#861e1e" />
+      <Label layoutX="38.0" layoutY="68.0" prefHeight="18.0" prefWidth="39.0" text="Email" textFill="#861e1e" />
+      <Label layoutX="38.0" layoutY="96.0" text="Password" textFill="#861e1e" />
+      <TextField fx:id="nameTF" layoutX="89.0" layoutY="36.0" />
+      <TextField fx:id="emailTF" layoutX="89.0" layoutY="65.0" />
+      <TextField fx:id="passwordTF" layoutX="89.0" layoutY="92.0" />
+      <Label layoutX="14.0" layoutY="14.0" prefHeight="18.0" prefWidth="253.0" text="                  PLAYER FORM" textFill="#861e1e">
+         <font>
+            <Font name="Century" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="finishButton" layoutX="88.0" layoutY="125.0" mnemonicParsing="false" onAction="#handleFinishButton" prefHeight="26.0" prefWidth="149.0" text="Finish" textFill="#707f0e">
+         <font>
+            <Font name="System Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
+

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="vc.controllers.TournamentViewController"
+maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="805.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="nameLabel" layoutX="300.0" layoutY="20.0" prefHeight="18.0" prefWidth="224.0" text="TournamentName" textFill="#8c1010">
+         <font>
+            <Font name="Century" size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qfM1P1Button" layoutX="14.0" layoutY="78.0" />
+      <TextField fx:id="qfM1P2Button" layoutX="14.0" layoutY="104.0" />
+      <TextField fx:id="qfM2P1Button" layoutX="14.0" layoutY="187.0" />
+      <TextField fx:id="qfM2P2Button" layoutX="14.0" layoutY="213.0" />
+      <TextField fx:id="sfM1P1Button" layoutX="200.0" layoutY="130.0" />
+      <TextField fx:id="sfM1P2Button" layoutX="200.0" layoutY="156.0" />
+      <TextField fx:id="fP1Button" layoutX="390.0" layoutY="130.0" />
+      <TextField fx:id="fP2Button" layoutX="390.0" layoutY="156.0" />
+      <TextField fx:id="sfM2P1Button" layoutX="570.0" layoutY="130.0" />
+      <TextField fx:id="sfM2P2Button" layoutX="570.0" layoutY="156.0" />
+      <TextField fx:id="qfM3P1Button" layoutX="754.0" layoutY="78.0" />
+      <TextField fx:id="qfM3P2Button" layoutX="754.0" layoutY="104.0" />
+      <TextField fx:id="qfM4P1Button" layoutX="754.0" layoutY="187.0" />
+      <TextField fx:id="qfM4P2Button" layoutX="754.0" layoutY="213.0" />
+      <Button fx:id="qf1Button" layoutX="60.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleQF1" text="Update" />
+      <Button fx:id="qf2Button" layoutX="60.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleQF2" text="Update" />
+      <Button fx:id="sf1Button" layoutX="232.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleSF1" text="Update" />
+      <Button fx:id="fButton" layoutX="410.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleF" text="Update" />
+      <Button fx:id="sf2Button" layoutX="600.0" layoutY="190.0" mnemonicParsing="false" onAction="#handleSF2" text="Update" />
+      <Button fx:id="qf3Button" layoutX="800.0" layoutY="140.0" mnemonicParsing="false" onAction="#handleQF3" text="Update" />
+      <Button fx:id="qf4Button" layoutX="780.0" layoutY="250.0" mnemonicParsing="false" onAction="#handleQF4" text="Update" />
+      <Label layoutX="300.0" layoutY="52.0" prefHeight="18.0" prefWidth="55.0" text="STATUS:">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="statusLabel" layoutX="355.0" layoutY="52.0" prefHeight="18.0" prefWidth="65.0" text="Status" textFill="#90970e" />
+      <Label layoutX="54.0" layoutY="61.0" text="QUARTERFINAL" />
+      <Label layoutX="46.0" layoutY="173.0" text="QUARTERFINAL" />
+      <Label layoutX="790.0" layoutY="61.0" text="QUARTERFINAL" />
+      <Label layoutX="790.0" layoutY="173.0" text="QUARTERFINAL" />
+      <Label layoutX="211.0" layoutY="108.0" text="SEMIFINAL" />
+      <Label layoutX="560.0" layoutY="108.0" text="SEMIFINAL" />
+      <Label layoutX="400.0" layoutY="108.0" text="~FINAL~" />
+      <Label layoutX="314.0" layoutY="256.0" text="WINNER:">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="winnerLabel" layoutX="380.0" layoutY="257.0" text="Pending" />
+   </children>
+</AnchorPane>

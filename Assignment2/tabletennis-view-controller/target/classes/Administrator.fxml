@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane fx:controller="vc.controllers.AdministratorController"
+maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="820.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TableView fx:id="playerTable" layoutX="14.0" layoutY="50.0" prefHeight="374.0" prefWidth="274.0">
+        <columns>
+          <TableColumn prefWidth="100.0" text="Name" fx:id = "Name"/>
+          <TableColumn prefWidth="108.800048828125" text="Email" fx:id = "Email"/>
+            <TableColumn prefWidth="70.0" text="Money" fx:id = "Money" />
+        </columns>
+      </TableView>
+      <Label layoutX="30.0" layoutY="14.0" prefHeight="18.0" prefWidth="273.0" text="           PLAYERS" textFill="#b73b3b">
+         <font>
+            <Font name="Century" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="addPlayerButton" layoutX="295.0" layoutY="51.0" mnemonicParsing="false" onAction="#handleAddPlayer" prefHeight="26.0" prefWidth="114.0" text="Add player" textFill="#b73b3b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="updatePlayerButton" layoutX="295.0" layoutY="118.0" mnemonicParsing="false" onAction="#handleUpdatePlayer" prefHeight="26.0" prefWidth="114.0" text="Update player" textFill="#b73b3b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="moneyManagerButton" layoutX="296.0" layoutY="151.0" mnemonicParsing="false" onAction="#handleManageMoney"  prefHeight="26.0" prefWidth="114.0" text="Money manager" textFill="#b73b3b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="tournamentTable" layoutX="415.0" layoutY="51.0" prefHeight="373.0" prefWidth="366.0">
+        <columns>
+          <TableColumn prefWidth="105.59994506835938" text="Name" fx:id = "tableName"/>
+          <TableColumn prefWidth="88.0" text="Type" fx:id = "tableType"/>
+            <TableColumn prefWidth="50.05" text="Fee" fx:id = "tableFee" />
+            <TableColumn prefWidth="120.0" text="Start date" fx:id = "tableDate"/>
+        </columns>
+      </TableView>
+      <Label layoutX="477.0" layoutY="14.0" prefHeight="18.0" prefWidth="273.0" text="TOURNAMENTS" textFill="#d2bb29">
+         <font>
+            <Font name="Century" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="addTournamentButton" layoutX="293.0" layoutY="254.0" mnemonicParsing="false" onAction="#handleAddTournament" prefHeight="26.0" prefWidth="121.0" text="Add tournament" textFill="#d2bb29">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="updateTournamentButton" layoutX="287.0" layoutY="291.0" mnemonicParsing="false" onAction="#handleUpdateTournament" prefHeight="26.0" prefWidth="129.0" text="Update tournament" textFill="#d2bb29">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteTournamentButton" layoutX="286.0" layoutY="333.0" mnemonicParsing="false" onAction="#handleDeleteTournament" prefHeight="26.0" prefWidth="130.0" text="Delete tournament" textFill="#d2bb29">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+          <Button fx:id="openTournamentButton" layoutX="286.0" layoutY="375.0" mnemonicParsing="false" onAction="#handleOpenTournament" prefHeight="26.0" prefWidth="130.0" text="Open tournament" textFill="#d2bb29">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="deletePlayerButton" layoutX="296.0" layoutY="85.0" mnemonicParsing="false" onAction="#handleDeletePlayer" prefHeight="26.0" prefWidth="114.0" text="Delete player" textFill="#b73b3b">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="enrollButton" layoutX="295.0" layoutY="200.0" mnemonicParsing="false" onAction="#handleEnroll" prefHeight="30.0" prefWidth="114.0" text="ENROLL">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="409.0" layoutY="471.0" prefHeight="26.0" prefWidth="99.0" text="ADMINISTRATOR" />
+      <TextField fx:id="adminTextField" layoutX="508.0" layoutY="471.0" />
+      <Button fx:id="logOutButton" layoutX="663.0" layoutY="471.0" mnemonicParsing="false" onAction="#handleLogOut" prefHeight="26.0" prefWidth="114.0" text="LOG OUT" />
+      <Text fontSmoothingType="LCD" layoutX="450.0" layoutY="452.0" opacity="0.2" smooth="false" strokeLineJoin="BEVEL" strokeType="OUTSIDE" strokeWidth="0.0" text="Table tennis application" wrappingWidth="327.57958984375">
+         <font>
+            <Font name="Century" size="27.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

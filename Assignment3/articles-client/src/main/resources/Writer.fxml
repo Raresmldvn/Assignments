@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:controller="ui.controller.WriterController"
+maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="601.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="427.0" layoutY="23.0" text="User" textFill="#475ee2" />
+      <TextField fx:id="userTF" layoutX="468.0" layoutY="19.0" />
+      <Label layoutX="14.0" layoutY="40.0" prefHeight="26.0" prefWidth="42.0" text="TITLE" textFill="#475ee2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="titleTF" layoutX="16.0" layoutY="67.0" prefHeight="26.0" prefWidth="480.0" />
+      <TextArea fx:id="abstractTA" layoutX="13.0" layoutY="134.0" prefHeight="75.0" prefWidth="480.0" />
+      <Label layoutX="16.0" layoutY="107.0" prefHeight="26.0" prefWidth="66.0" text="ABSTRACT" textFill="#475ee2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="16.0" layoutY="216.0" prefHeight="26.0" prefWidth="42.0" text="BODY" textFill="#475ee2">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="bodyTA" layoutX="16.0" layoutY="242.0" prefHeight="298.0" prefWidth="480.0" />
+      <Button fx:id="saveButton" layoutX="286.0" layoutY="558.0" mnemonicParsing="false" onAction="#handleSave" prefHeight="26.0" prefWidth="81.0" text="SAVE" textFill="#c71111" />
+      <Button fx:id="clearButton" layoutX="386.0" layoutY="558.0" mnemonicParsing="false" onAction="#handleClear" prefHeight="26.0" prefWidth="81.0" text="CLEAR" textFill="#9d9f0d" />
+      <Button fx:id="logOutButton" layoutX="629.0" layoutY="19.0" mnemonicParsing="false" onAction="#handleLogOut" text="Log out" />
+      <Label layoutX="509.0" layoutY="50.0" prefHeight="26.0" prefWidth="66.0" text="RELATED" textFill="#475ee2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TableView fx:id="articleTable" layoutX="509.0" layoutY="66.0" prefHeight="475.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="199.19998168945312" text="Articles" />
+        </columns>
+      </TableView>
+        <Button fx:id="updateButton" layoutX="581.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update" />
+      <Button fx:id="deleteButton" layoutX="646.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleDelete" text="Delete" />
+      <Button fx:id="openButton" layoutX="517.0" layoutY="545.0" mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+   </children>
+</AnchorPane>
